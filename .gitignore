@@ -1,0 +1,9 @@
+*saved_models/
+*.idea*
+*.zip
+*egg-info*
+**__pycache__**
+*tb_*
+*/tensorboard/*
+*venv*
+*.csv

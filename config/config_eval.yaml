@@ -1,0 +1,15 @@
+general:
+  hcp: 0                            # used handicap
+
+checkpoint:
+  pretrained_experiment_path: 'weights/agent_weights'    # Path of ptetrained model. If path == '' nothing is loaded
+
+training:
+  batch_size: 1                     # Batch size of the training.
+  nb_epochs: 1                     # Number of epochs of the training.
+  max_nb_steps_per_episode: 100     # After this many steps a game is terminated.
+
+model:
+  hidden_size: 16                   # Size of the hidden dimension for the GRU encoders.
+  hidden_linear_size: 16            # Size of the hidden dimenison for the FC models in the scorers.
+  bidirectional: True               # Determines if the GRU encoders are bidirectional or not.

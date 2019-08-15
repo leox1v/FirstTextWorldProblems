@@ -1,0 +1,27 @@
+general:
+  discount_gamma: 0.9               # Discount factor for the return computation.
+  hcp: 0                            # used handicap
+
+tensorboard:
+  directory: ''                     # Logging directory for tensorboard. If '' not logged.
+  log_frequency: 240                # in seconds
+
+checkpoint:
+  experiment_tag: 'LeDeepChef'                           # Name of the experiment.
+  model_checkpoint_path: 'saved_models'                  # Path where the model should be saved.
+  pretrained_experiment_path: 'weights/agent_weights'    # Path of ptetrained model. If path == '' nothing is loaded
+  save_frequency: 3600                                   # in seconds
+
+training:
+  batch_size: 1                     # Batch size of the training.
+  nb_epochs: 3                      # Number of epochs of the training.
+  max_nb_steps_per_episode: 100     # After this many steps a game is terminated.
+  update_frequency: 20              # After this many steps we perform the unrolling for the update.
+  optimizer:
+    learning_rate: 0.0005           # Learning rate of the (Adam) optimizer. 
+    clip_grad_norm: 40              # Gradient clipping.
+
+model:
+  hidden_size: 16                   # Size of the hidden dimension for the GRU encoders.
+  hidden_linear_size: 16            # Size of the hidden dimenison for the FC models in the scorers.
+  bidirectional: True               # Determines if the GRU encoders are bidirectional or not.

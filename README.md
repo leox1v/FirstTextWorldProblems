@@ -1,4 +1,4 @@
-# LeDeepChef <img src="src/male-cook.png" alt="alt text" width="40" height="40">
+#                         LeDeepChef <img src="src/male-cook.png" alt="alt text" width="40" height="40">
 ## Deep Reinforcement Learning Agent for Families of Text-Based Games
 
 This is the repository to the runner-up model in the [*First TextWorld Problems: A Reinforcement and Language Learning Challenge*](https://www.microsoft.com/en-us/research/project/textworld/), called **LeDeepChef** <img src="src/male-cook.png" alt="alt text" width="30" height="30">.
